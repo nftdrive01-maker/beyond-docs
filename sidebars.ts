@@ -10,6 +10,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '概念',
       items: [
+        'concepts/why-verification-matters',
         'concepts/verifiable-data',
         'concepts/full-onchain',
         'concepts/trust-model',
