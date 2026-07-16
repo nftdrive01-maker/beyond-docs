@@ -1,0 +1,30 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* BEYOND Docs のブランドカラー（落ち着いた青系） */
+:root {
+  --ifm-color-primary: #1d5c96;
+  --ifm-color-primary-dark: #1a5387;
+  --ifm-color-primary-darker: #194e80;
+  --ifm-color-primary-darkest: #144069;
+  --ifm-color-primary-light: #2065a5;
+  --ifm-color-primary-lighter: #216aac;
+  --ifm-color-primary-lightest: #2678c3;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* ダークモードでは読みやすい明るめの色に調整 */
+[data-theme='dark'] {
+  --ifm-color-primary: #64a8e0;
+  --ifm-color-primary-dark: #4d9bdb;
+  --ifm-color-primary-darker: #4194d9;
+  --ifm-color-primary-darkest: #2680cc;
+  --ifm-color-primary-light: #7bb5e5;
+  --ifm-color-primary-lighter: #87bce8;
+  --ifm-color-primary-lightest: #abd0ef;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
