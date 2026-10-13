@@ -21,17 +21,20 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'ガイド',
       items: [
+        'guide/editions',
         'guide/verify-data',
         'guide/write-data',
         'guide/network-profile',
+        'guide/file-encryption',
+        'guide/verified-drive',
       ],
     },
     {
       type: 'category',
       label: '高度なトピック',
       items: [
+        'advanced/beacon',
         'advanced/chain-finalization',
-        'advanced/snapshot-proof',
       ],
     },
     {
@@ -44,6 +47,7 @@ const sidebars: SidebarsConfig = {
       label: 'リファレンス',
       items: [
         'reference/glossary',
+        'reference/record-size-limits',
         'reference/known-limitations',
       ],
     },
