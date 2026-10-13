@@ -16,8 +16,8 @@ function HomepageHeader() {
           記録を、後から検証できる形へ。
         </Heading>
         <p className="hero__subtitle">
-          BEYONDは、ブロックチェーンに記録されたデータの根拠を、
-          人間が確認できる形で扱うための検証ブラウザです。
+          BEYONDは、ブロックチェーンへの記録と、データ実体・トランザクション・
+          ブロック・ネットワークの関係を確認するためのアプリケーションです。
         </p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
@@ -27,6 +27,11 @@ function HomepageHeader() {
             className="button button--outline button--secondary button--lg"
             to="/docs/concepts/verifiable-data">
             検証可能なデータとは
+          </Link>
+          <Link
+            className="button button--outline button--secondary button--lg"
+            to="/docs/guide/editions">
+            利用環境を選ぶ
           </Link>
           <Link
             className="button button--outline button--secondary button--lg"
@@ -52,40 +57,40 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'データ実体の確認',
+    title: 'Verified Browser',
     description:
-      'ハッシュだけでなく、記録されたデータそのものが取得・復元できることを確認します。「保存されている」と「検証できる」を分けて扱います。',
+      'データ実体を取得・復元し、トランザクション、ブロック、ネットワーク、取得元との関係を確認します。',
     to: '/docs/guide/verify-data',
   },
   {
-    title: 'ブロック・トランザクションの確認',
+    title: 'Studioと保存モード',
     description:
-      '記録がどのトランザクションで作成され、どのブロックに含まれているかをたどり、記録の根拠を確認できます。',
-    to: '/docs/guide/verify-data',
+      'ファイルやコンテンツを記録し、Base64／バイナリ保存、暗号化、手数料、完了後の読み戻しを確認します。',
+    to: '/docs/guide/write-data',
   },
   {
-    title: 'Network Profile',
+    title: 'ファイル暗号化',
     description:
-      'generationHashやノード情報によって「どのチェーンを、どのノード経由で見ているか」を明示し、検証の前提を確認可能にします。',
-    to: '/docs/guide/network-profile',
+      'デスクトップ版でファイル本体を暗号化し、復旧フレーズ、ロック、共有パスワードを管理します。',
+    to: '/docs/guide/file-encryption',
   },
   {
-    title: 'Chain Finalization / SnapshotProof',
+    title: 'Verified Drive',
     description:
-      'チェーンの停止後まで含めて検証可能性を設計します。「永遠に動かす」ではなく「止まっても検証できる」という考え方です。',
-    to: '/docs/advanced/chain-finalization',
+      'Windowsへ記録を同期し、初回取得時の基準値を使ってローカルファイルの変更や欠落を検知します。',
+    to: '/docs/guide/verified-drive',
+  },
+  {
+    title: 'BlockchainsとBeacon',
+    description:
+      '対象ネットワークとノードを管理し、ノードが署名したBeaconと別チェーン上のAnchorを確認します。',
+    to: '/docs/advanced/beacon',
   },
   {
     title: '保証範囲の明示',
     description:
-      'BEYONDが保証すること / 保証しないことを明確に文書化しています。誇大な表現をせず、境界を示すことを信頼の基盤とします。',
+      '確認できる範囲と、内容の真実性やネットワークの永続性など保証しない範囲を明確にしています。',
     to: '/docs/concepts/guarantees',
-  },
-  {
-    title: '長期的な再検証性',
-    description:
-      '稼働中だけでなく、停止後・移行後・再検証時まで含めて、記録を後から検証できる形で残すことを設計の中心に置いています。',
-    to: '/docs/concepts/verifiable-data',
   },
 ];
 
@@ -119,7 +124,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={siteConfig.title}
-      description="BEYONDは、ブロックチェーンに記録されたデータの根拠を、人間が確認できる形で扱うための検証ブラウザです。">
+      description="BEYONDは、ブロックチェーンへの記録と、データ実体・トランザクション・ブロック・ネットワークの関係を確認するためのアプリケーションです。">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
