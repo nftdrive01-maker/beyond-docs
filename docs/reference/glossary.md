@@ -73,7 +73,7 @@ BEYOND Docsで使用する用語を定義します。
 
 ## BNL
 
-NFTDriveのエコシステムにおける独自ブロックチェーン。BEYONDからはNetwork Profileを登録することで接続・検証できる。
+NFTDriveのエコシステムにおける独自ブロックチェーンの作成ツール。BNLで作成したチェーンには、BEYONDからNetwork Profileを登録して接続し、データの記録・取得・復元・検証を行える。
 
 ## Record
 

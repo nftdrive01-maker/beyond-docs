@@ -10,9 +10,11 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '概念',
       items: [
+        'concepts/web5',
         'concepts/why-verification-matters',
         'concepts/verifiable-data',
         'concepts/full-onchain',
+        'concepts/nftdrive-storage',
         'concepts/trust-model',
         'concepts/guarantees',
       ],
@@ -21,9 +23,11 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'ガイド',
       items: [
+        'guide/installation',
         'guide/editions',
         'guide/verify-data',
         'guide/write-data',
+        'guide/web5-site',
         'guide/network-profile',
         'guide/file-encryption',
         'guide/verified-drive',
@@ -34,6 +38,7 @@ const sidebars: SidebarsConfig = {
       label: '高度なトピック',
       items: [
         'advanced/beacon',
+        'advanced/dao-operation',
         'advanced/chain-finalization',
       ],
     },
@@ -48,6 +53,8 @@ const sidebars: SidebarsConfig = {
       items: [
         'reference/glossary',
         'reference/record-size-limits',
+        'reference/nftdrive-record-format',
+        'reference/development-and-licensing',
         'reference/known-limitations',
       ],
     },
