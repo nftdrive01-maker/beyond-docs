@@ -11,6 +11,7 @@ const sidebars: SidebarsConfig = {
       label: '概念',
       items: [
         'concepts/web5',
+        'concepts/independent-infrastructure',
         'concepts/why-verification-matters',
         'concepts/verifiable-data',
         'concepts/full-onchain',
@@ -23,12 +24,15 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'ガイド',
       items: [
+        'guide/quickstart',
         'guide/installation',
         'guide/editions',
         'guide/verify-data',
         'guide/write-data',
+        'guide/jobs',
         'guide/web5-site',
         'guide/network-profile',
+        'guide/network-design',
         'guide/file-encryption',
         'guide/verified-drive',
       ],

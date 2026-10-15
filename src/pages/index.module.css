@@ -24,6 +24,24 @@
   gap: 0.75rem;
 }
 
+.buttons a {
+  white-space: normal;
+  max-width: 100%;
+}
+
+.buttons a:global(.button--outline) {
+  color: var(--ifm-hero-text-color);
+}
+
+.buttons a:global(.button--outline):hover {
+  color: var(--ifm-color-black);
+}
+
+.heroBanner p a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .features {
   display: flex;
   align-items: center;

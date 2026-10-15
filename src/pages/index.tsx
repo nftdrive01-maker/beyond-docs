@@ -8,7 +8,6 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -20,18 +19,18 @@ function HomepageHeader() {
           ブロック・ネットワークの関係を確認するためのアプリケーションです。
         </p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/docs/intro">
-            BEYONDとは
+          <Link className="button button--secondary button--lg" to="/docs/guide/quickstart">
+            5分で体験するBEYOND
           </Link>
           <Link
             className="button button--outline button--secondary button--lg"
-            to="/docs/concepts/verifiable-data">
-            検証可能なデータとは
+            to="https://beyond.nftdrive.net/">
+            Web版を開く
           </Link>
           <Link
             className="button button--outline button--secondary button--lg"
-            to="/docs/guide/editions">
-            利用環境を選ぶ
+            to="/docs/guide/installation">
+            Windows版をインストール
           </Link>
           <Link
             className="button button--outline button--secondary button--lg"
@@ -44,6 +43,10 @@ function HomepageHeader() {
             FAQ
           </Link>
         </div>
+        <p className="margin-top--md">
+          Webホスティングやクラウドへの預け入れではなく、チェーン上の記録を自分で取得・検証する環境です。
+          <Link to="/docs/intro">BEYONDとは</Link>
+        </p>
       </div>
     </header>
   );
@@ -109,6 +112,14 @@ function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <Heading as="h2">目的から始める</Heading>
+        <ul>
+          <li><Link to="/docs/guide/verify-data">情報を閲覧・検証する</Link></li>
+          <li><Link to="/docs/guide/write-data">自分のデータを記録する</Link></li>
+          <li><Link to="/docs/guide/web5-site">名前を付ける・フルオンチェーンサイトを公開する</Link></li>
+          <li><Link to="/docs/guide/network-design">ネットワークを設計・運用する</Link></li>
+          <li><Link to="/docs/concepts/verifiable-data">検証可能なデータの考え方を知る</Link></li>
+        </ul>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />

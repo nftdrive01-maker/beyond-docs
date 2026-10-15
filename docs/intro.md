@@ -9,7 +9,7 @@ BEYONDは、ブロックチェーンへの記録と、記録されたデータ�
 
 デスクトップ版とWeb版があり、利用できる機能や接続方法が異なります。ファイル暗号化、WindowsのVerified Drive、LAN内ノードへの直接接続など、端末内の鍵やファイルシステムを使う機能はデスクトップ版で提供されます。
 
-初めて利用する方は、[ダウンロードとインストール](./guide/installation.mdx) を参照してください。
+初めて利用する方は、登録や鍵の作成が不要な [5分で体験するBEYOND](./guide/quickstart.md) から始めてください。Windows版の入手方法は [ダウンロードとインストール](./guide/installation.mdx) にまとめています。
 
 ## 何のためのプロダクトか
 
@@ -82,6 +82,7 @@ BEYONDは、「ブロックチェーンは永遠に稼働するとは限らな�
 
 ## 次に読むページ
 
+- 運用を検討する方は [特定のサービスに依存しない情報通信インフラ](./concepts/independent-infrastructure.md) と [ネットワークを設計する](./guide/network-design.md) をご覧ください。
 - 利用環境を選ぶには [デスクトップ版とWeb版](./guide/editions.md) をご覧ください。
 - 記録を確認するには [データを検証する](./guide/verify-data.md) から始めてください。
 - データを記録する前に [データを書き込む](./guide/write-data.md) と [記録サイズの制約](./reference/record-size-limits.md) を確認してください。
