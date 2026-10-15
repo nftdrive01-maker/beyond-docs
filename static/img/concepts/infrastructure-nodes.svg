@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900" role="img" aria-labelledby="title desc">
+  <title id="title">一部の取得元が停止した場合の代替取得経路</title>
+  <desc id="desc">拠点Aのノードが停止しても、必要な履歴を提供する拠点Bのノードから取得し、利用者のBEYONDで復元・照合・検証できる構成の例です。別管理のアーカイブは読み出し環境を確保して利用します。各保存先には必要なデータ実体と履歴があり、拠点や管理権限が分離されていることが前提です。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#1d5c96"/></marker>
+    <marker id="archiveArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#347886"/></marker>
+  </defs>
+  <rect width="600" height="900" rx="20" fill="#f6f9fc"/>
+  <g font-family="'Noto Sans JP','Yu Gothic',Meiryo,sans-serif" fill="#18334d">
+    <text x="28" y="48" font-size="28" font-weight="700">一部停止時も、取得元を選び直す</text>
+    <text x="28" y="82" font-size="20" fill="#475d70">必要なデータ実体と履歴を保持する構成の例</text>
+    <rect x="28" y="108" width="528" height="128" rx="14" fill="#fff5f3" stroke="#c58c82" stroke-width="2"/>
+    <text x="50" y="146" font-size="24" font-weight="700">拠点Aのノード</text>
+    <rect x="420" y="124" width="112" height="36" rx="18" fill="#8e3f35"/>
+    <text x="476" y="149" text-anchor="middle" font-size="20" fill="#fff" font-weight="700">停止中</text>
+    <text x="50" y="183" font-size="21">障害・災害などで応答できない</text>
+    <text x="50" y="214" font-size="20" fill="#87473e">この取得元からは読み出せない</text>
+    <rect x="28" y="268" width="528" height="128" rx="14" fill="#fff" stroke="#1d5c96" stroke-width="2"/>
+    <text x="50" y="306" font-size="24" font-weight="700">拠点Bのノード</text>
+    <rect x="420" y="284" width="112" height="36" rx="18" fill="#1d5c96"/>
+    <text x="476" y="309" text-anchor="middle" font-size="20" fill="#fff" font-weight="700">提供中</text>
+    <text x="50" y="343" font-size="21">必要なデータ実体と履歴を保持・提供</text>
+    <text x="50" y="374" font-size="20" fill="#1d5c96">代替ノードから取得する経路（実線）</text>
+    <path d="M556 332H580V610H438V646" fill="none" stroke="#1d5c96" stroke-width="3" stroke-linejoin="round" marker-end="url(#arrow)"/>
+    <rect x="28" y="428" width="528" height="128" rx="14" fill="#eef7f8" stroke="#90b8c1" stroke-width="2"/>
+    <text x="50" y="466" font-size="24" font-weight="700">別管理のアーカイブ</text>
+    <text x="50" y="503" font-size="21">必要なデータ実体と履歴を保全</text>
+    <text x="50" y="534" font-size="20" fill="#205b68">読み出し環境を確保して取得する経路（破線）</text>
+    <path d="M220 556V646" fill="none" stroke="#347886" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#archiveArrow)"/>
+    <rect x="28" y="660" width="544" height="136" rx="14" fill="#1d5c96"/>
+    <text x="50" y="700" font-size="27" font-weight="700" fill="#fff">利用者 ／ BEYOND</text>
+    <text x="50" y="740" font-size="24" font-weight="700" fill="#fff">取得 → 復元 → 照合 → 検証</text>
+    <text x="50" y="774" font-size="20" fill="#fff">実体・トランザクション・ブロック等を確認</text>
+    <text x="28" y="834" font-size="19">拠点・管理権限・通信経路の分離を計画します。</text>
+    <text x="28" y="862" font-size="19">復元仕様と、暗号化した場合の鍵も必要です。</text>
+    <text x="28" y="890" font-size="19">分散するだけで可用性や復旧が保証されるわけではありません。</text>
+  </g>
+</svg>

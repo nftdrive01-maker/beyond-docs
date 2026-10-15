@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="830" viewBox="0 0 600 830" role="img" aria-labelledby="title desc">
+  <title id="title">BNL・NFTDrive・BEYONDの役割とWEB5の構想</title>
+  <desc id="desc">BNLはネットワークの構築・運用、NFTDriveはデータ実体のオンチェーン記録、BEYONDは記録・取得・復元・照合・検証・活用を担います。WEB5はこれらを活用する構想であり、独立した技術層や業界共通規格ではありません。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#1d5c96"/></marker>
+  </defs>
+  <rect width="600" height="830" rx="20" fill="#f6f9fc"/>
+  <g font-family="'Noto Sans JP','Yu Gothic',Meiryo,sans-serif" fill="#18334d">
+    <text x="30" y="49" font-size="28" font-weight="700">記録から活用までの役割分担</text>
+    <text x="30" y="83" font-size="20" fill="#475d70">技術の役割と、それを活用する構想</text>
+    <rect x="28" y="112" width="544" height="138" rx="14" fill="#fff" stroke="#b9cfe2" stroke-width="2"/>
+    <rect x="28" y="128" width="6" height="106" rx="3" fill="#1d5c96"/>
+    <text x="52" y="151" font-size="28" font-weight="700" fill="#1d5c96">BNL</text>
+    <text x="52" y="188" font-size="23" font-weight="700">ネットワークを構築・運用する</text>
+    <text x="52" y="224" font-size="20">独自チェーンの作成とノード構成の基盤</text>
+    <path d="M300 254V282" stroke="#1d5c96" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="28" y="292" width="544" height="138" rx="14" fill="#fff" stroke="#b9cfe2" stroke-width="2"/>
+    <rect x="28" y="308" width="6" height="106" rx="3" fill="#1d5c96"/>
+    <text x="52" y="331" font-size="28" font-weight="700" fill="#1d5c96">NFTDrive</text>
+    <text x="52" y="368" font-size="23" font-weight="700">データ実体をオンチェーンに記録する</text>
+    <text x="52" y="404" font-size="20">実体を分割し、トランザクションへ含める</text>
+    <path d="M300 434V462" stroke="#1d5c96" stroke-width="3" marker-end="url(#arrow)"/>
+    <rect x="28" y="472" width="544" height="138" rx="14" fill="#fff" stroke="#b9cfe2" stroke-width="2"/>
+    <rect x="28" y="488" width="6" height="106" rx="3" fill="#1d5c96"/>
+    <text x="52" y="511" font-size="28" font-weight="700" fill="#1d5c96">BEYOND</text>
+    <text x="52" y="548" font-size="23" font-weight="700">記録を取得・復元し、根拠を確認する</text>
+    <text x="52" y="584" font-size="20">記録・取得・復元・照合・検証・活用の環境</text>
+    <rect x="28" y="638" width="544" height="112" rx="14" fill="#e8f3f5" stroke="#90b8c1" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="52" y="675" font-size="26" font-weight="700" fill="#205b68">WEB5という構想</text>
+    <text x="52" y="712" font-size="22">フルオンチェーン情報を閲覧・検証・活用</text>
+    <text x="30" y="786" font-size="19">役割の整理であり、自動構築の手順ではありません。</text>
+    <text x="30" y="814" font-size="19">履歴の保持・提供と、鍵や復元仕様の保全も必要です。</text>
+  </g>
+</svg>
