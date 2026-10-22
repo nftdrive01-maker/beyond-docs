@@ -10,7 +10,7 @@ https://nftdrive01-maker.github.io/beyond-docs/
 
 ## ローカル起動
 
-Node.js 20以上が必要です。
+Node.js 24 LTS（24.22.1以上）が必要です。
 
 ```bash
 npm install
