@@ -32,6 +32,7 @@ const sidebars: SidebarsConfig = {
         'guide/jobs',
         'guide/web5-site',
         'guide/network-profile',
+        'guide/network-diagnostics',
         'guide/network-design',
         'guide/file-encryption',
         'guide/verified-drive',
@@ -56,6 +57,7 @@ const sidebars: SidebarsConfig = {
       label: 'リファレンス',
       items: [
         'reference/glossary',
+        'reference/network-diagnostics',
         'reference/record-size-limits',
         'reference/nftdrive-record-format',
         'reference/development-and-licensing',

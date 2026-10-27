@@ -52,7 +52,7 @@ BEYONDは、**保存 → 取得 → 照合 → 検証**を一つの流れとし�
 | --- | --- |
 | 閲覧・検証 | [Verified Browser](./guide/verify-data.md)で記録を検索・復元し、トランザクション、ブロック、ネットワークとの関係を確認する。[BeaconとAnchor](./advanced/beacon.md)でノードの署名付き宣言と別チェーンに記録した根拠を関連付ける |
 | 作成・書き込み | [Studio](./guide/write-data.md)でファイルや文書・フォームを作成・記録し、[Jobs](./guide/jobs.md)で書き込み処理の進捗を確認する |
-| ネットワークの設計・管理 | [Blockchains](./guide/network-profile.md)でネットワークとノードを管理する。[Designer](./guide/network-design.md)で独自ネットワークの構成・容量を計画し、概算や仕様書を作成する |
+| ネットワークの設計・管理 | [Blockchains](./guide/network-profile.md)でネットワークとノードを管理し、[ネットワーク診断](./guide/network-diagnostics.md)で到達性・履歴提供・整合性を確認する。[Designer](./guide/network-design.md)で独自ネットワークの構成・容量を計画し、概算や仕様書を作成する |
 | 暗号化・鍵管理 | デスクトップ版の[ファイル暗号化とVault](./guide/file-encryption.md)でファイル暗号化キーと復旧フレーズを管理する。Vaultはアカウントの署名用秘密鍵を復旧する機能ではない |
 | データの活用 | [ネームスペース](./guide/web5-site.md)でアドレスに名前を割り当てる。[Verified Drive](./guide/verified-drive.md)でWindowsへファイルを同期し、ローカル変更を検知する。Mosaicトレーサビリティでアセットの移転履歴を確認する |
 
