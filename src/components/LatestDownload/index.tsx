@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 
 const manifestUrl = 'https://beyond.nftdrive.net/version.json';
-type Release = {version: string; windows: string | null};
+type Release = {version: string; windows: string | null; releaseNotes: string[]};
 
 export default function LatestDownload() {
   const [attempt, setAttempt] = useState(0);
@@ -25,7 +25,7 @@ export default function LatestDownload() {
         if (!response.ok) throw new Error('Manifest unavailable');
         const data: unknown = await response.json();
         if (!data || typeof data !== 'object') throw new Error('Invalid manifest');
-        const {version, windows} = data as Record<string, unknown>;
+        const {version, windows, releaseNotes} = data as Record<string, unknown>;
         if (typeof version !== 'string' || !version.trim()) throw new Error('Invalid version');
         if (windows !== null) {
           if (typeof windows !== 'string') throw new Error('Invalid download');
@@ -35,7 +35,10 @@ export default function LatestDownload() {
             throw new Error('Unexpected download URL');
           }
         }
-        if (active) setRelease({version, windows: windows as string | null});
+        const notes = Array.isArray(releaseNotes)
+          ? releaseNotes.filter((note): note is string => typeof note === 'string' && Boolean(note.trim()))
+          : [];
+        if (active) setRelease({version, windows: windows as string | null, releaseNotes: notes});
       } catch {
         if (active) setFailed(true);
       } finally {
@@ -62,7 +65,15 @@ export default function LatestDownload() {
         </>
       ) : release ? (
         <>
-          <p>最新バージョン：{release.version}</p>
+          <p><strong>最新バージョン：{release.version}</strong></p>
+          {release.releaseNotes.length > 0 && (
+            <section className="margin-bottom--md" aria-label={`バージョン${release.version}の更新内容`}>
+              <h3>このバージョンの更新内容</h3>
+              <ul>
+                {release.releaseNotes.map((note, index) => <li key={`${index}-${note}`}>{note}</li>)}
+              </ul>
+            </section>
+          )}
           {release.windows ? (
             <>
               <a className="button button--primary" href={release.windows}>Windows版をダウンロード</a>
